@@ -1,0 +1,118 @@
+SCROLLJOIN v1.0
+Free offline screenshot stitcher
+29 October 2026
+
+OPEN THE TOOL
+1. Extract this ZIP to a folder.
+2. Double-click ScrollJoin.html. If needed, right-click > Open with > your browser.
+3. Choose screenshots, drop them into the box, or paste an image with Ctrl+V / Cmd+V.
+   Try the sample if you just want a quick tour.
+
+No installer, command line, server, account or internet connection is required.
+The HTML is the entire application, including its editable source code.
+For the smoothest desktop experience, use a current Chrome or Edge browser.
+Other modern browsers may work; they have not all been verified in this release.
+Mobile layouts are included, but opening downloaded HTML varies by phone/browser.
+
+MAKE ONE CONTINUOUS IMAGE
+1. Put screenshots in top-to-bottom order. Drag cards, use arrows, or Sort by name.
+2. Click a screenshot to trim its top, bottom, left or right edges in source pixels.
+   Use this for repeated status bars, headers, keyboards or navigation bars.
+   Apply top & bottom trim to all copies those two margins to every image.
+3. Click Find overlaps. Open the Joins tab to see the suggestions.
+4. Inspect every join. Adjust its slider or pixel value until the content lines up.
+   Keep both in full sets that join to zero. A full-height overlap omits that image.
+5. Set an output width, then save PNG, JPG or PDF.
+   If the automatic download does not start, click the Download link that appears.
+
+Images should share overlapping content, the same zoom and stable page layout.
+Repeated patterns, different zoom levels, moving elements or very short overlaps
+can prevent matching. Uncertain pairs are left untrimmed for manual adjustment.
+Identical-looking images are flagged for you to check; they are not auto-deleted.
+The tool currently stitches vertically, not panoramas or side-by-side images.
+
+EDITING NOTES
+- Cropping, adding, removing or reordering resets overlap values for the sequence.
+- Find overlaps preserves manually adjusted joins. Reset all joins clears them.
+- Undo/Redo covers cropping, joins and reordering, up to 30 edits.
+- Adding/removing images clears undo history. Clear all releases the collection.
+- Nothing is saved between visits. Export before closing or refreshing the tab.
+- Originals are never modified. Exports are new files in your browser's save location.
+- The guides in the preview are not included in exports.
+
+OUTPUT QUALITY
+PNG is the best starting point for readable text. JPG makes smaller files and has
+an adjustable quality setting. Both render the edited pixels into a new image.
+Input images are scaled to the smallest cropped width (capped at 4,096 px).
+The output width can be reduced; it will not upscale a smaller common source.
+Transparent areas are flattened onto white. This is not a byte-preserving export.
+
+PDF exports A4 or US Letter pages with margins. It is an image-based PDF, not
+selectable/searchable text. A small repeated strip at page breaks helps reading;
+change or disable it in JPG quality & PDF settings. Page breaks may cross text.
+PDF pages use high-quality JPEG, so they are not lossless. No watermarks are added.
+
+SUPPORTED INPUT AND LIMITS
+Still PNG, JPG/JPEG and WebP images. Animated images and SVG/HEIC/PDF input are
+not supported. Convert those to still PNG/JPG before using the tool.
+30 images per collection; 25 MB per file; 20 megapixels per image;
+60 megapixels total; maximum source side 32,760 px.
+Single PNG/JPG output: 32 megapixels and 32,760 px per side.
+Larger results: reduce output width or use PDF.
+PDF limit: 200 pages and 150 MB of page-image data.
+Device memory can impose lower practical limits. Try a smaller batch if needed.
+
+PRIVACY
+Files are processed within the browser on your device. The tool contains no
+uploads, analytics, remote scripts, external fonts or tracking. It does not ask
+for camera, location or administrator permissions. Your browser handles normal
+file selection, clipboard paste and downloads. Selecting screenshots does not
+upload them to a server.
+
+WHAT IS IN THIS FOLDER?
+ScrollJoin.html       The complete app; the only file needed to run it.
+START-HERE.txt        These instructions and the software license.
+Promo/               12 PNG graphics, listing copy and the artwork guide.
+
+FOR THE CREATOR
+Upload the ZIP as a free download. The Promo folder contains two horizontal cover
+concepts, square and portrait art, a story graphic, an A4 poster and other banners.
+LISTING-AND-LAUNCH.md contains the product page copy, social copy and demo plan.
+ARTWORK-GUIDE.txt maps every filename to its size and explains editing/export notes.
+Nothing has been published or uploaded to your Gumroad or GitHub account.
+
+RELEASE CHECKS
+Core tests passed for known overlaps, JPEG noise, rescaled widths, ambiguous
+patterns, duplicates, header validation, crop geometry, output limits and PDF
+pagination. A generated three-page PDF was opened and rendered independently.
+The Chromium preview was checked for import, matching, manual controls, undo,
+reordering, cropping and PNG/JPG/PDF preparation. Narrow layouts were reviewed.
+Automated download capture in the remote test browser timed out; final saving
+on a user's Windows computer has not been independently verified. A visible
+Download link is provided after preparation as a fallback.
+
+SOFTWARE LICENSE
+MIT License
+Copyright (c) 2026 ScrollJoin contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+This release is intended for free distribution. The standard MIT software
+license is permissive. The promotional artwork was generated for this package;
+see ARTWORK-GUIDE.txt for provenance and format notes.
